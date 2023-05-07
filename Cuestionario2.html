@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Matemática para Todos</title>
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="normalize.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Mitr&display=swap" rel="stylesheet">
+
+  <link href="https://fonts.googleapis.com/css2?family=Coiny&display=swap" rel="stylesheet">
+
+  <script src="https://kit.fontawesome.com/073978fd2c.js" crossorigin="anonymous"></script>
+
+  <style>
+    * {
+      transition: all 0.4s ease;
+    }
+  </style>
+
+  <script>
+
+    function resultado() {
+
+      var p1, p2, p3, p4, p5, nota;
+
+
+if (document.getElementById('p11').checked == true) { p1 = 1 }
+
+      if (p1 == 1) { document.querySelectorAll('.pregunta1')[0].style.color = '#008000' }
+
+      else { p1 = 0 }
+
+
+
+if (document.getElementById('p22').checked == true) { p2 = 1 }
+
+      if (p2 == 1) { document.querySelectorAll('.pregunta2')[1].style.color = '#008000' }
+
+      else { p2 = 0 }
+
+
+
+if (document.getElementById('p33').checked == true) { p3 = 1 }
+
+      if (p3 == 1) { document.querySelectorAll('.pregunta3')[2].style.color = '#008000' }
+
+      else { p3 = 0 }
+
+
+if (document.getElementById('p44').checked == true) { p4 = 1 }
+
+      if (p4 == 1) { document.querySelectorAll('.pregunta4')[3].style.color = '#008000' }
+
+      else { p4 = 0 }
+      //
+
+      if (document.getElementById('p55').checked == true) { p5 = 1 }
+
+      if (p5 == 1) { document.querySelectorAll('.pregunta5')[4].style.color = '#008000' }
+
+      else { p5 = 0 }
+
+      nota = p1 + p2 + p3 + p4 + p5;
+
+      document.getElementById('resultado').innerHTML = "Aciertos: " + nota;
+
+      rs = confirm("C o n t i n u a r . . .");
+
+      if (rs == false) { document.forms[0].reset(); location.reload() }
+
+    }
+</script>
+
+</head>
+
+<body>
+  <header class="header">
+    <div class="container logo-nav-container">
+        <a href="#" class="logo">Aprende Física</a>
+        <nav class="navegation">
+            <ul>
+              <li><a href="index.html">Inicio</a></li>
+              <li><a href="contenido.html">Contenido</a></li>
+              <li><a href="ejemplos.html">Ejemplos</a></li>
+              <li><a href="ejercicios.html">Ejercicios</a></li>
+              <li><a href="forms.html">Autoevaluación</a></li>
+              <li><a href="consultas.html">Consultas</a></li>                   
+            </ul>
+        </nav>
+    </div>
+  </header>
+  <main class="main-3">
+   <div class="container">
+    <center>
+      <p class="paragraph">
+      <form method="get" action="CuestionarioPrincipal.html">
+        <button type="submit" style='width:90px; 250px;text-decoration: none;
+    padding: 10px;
+    font-weight: 600;
+    font-size: 15px;
+    color:#000000;
+    background-color:#FF9900;
+    border-radius: 6px;
+    border: 2px solid #FF6600; height:50px'>REGRESAR
+      </form>
+      </p>
+    </center> 
+
+    <form>
+      <center>
+        <h1> Exponentes y Radicales</h1>
+      </center>
+      <br>
+
+      <p>.<strong>&iquest;EN UNA SUMA O RESTA DE EXPRESIONES ALGEBRAICAS QUE PASA CON LOS EXPONENTES? </strong></p>
+      <p class="pregunta1"><input type="radio" name="pregunta1" id="p11">
+        Los exponentes no se suman ni se restan.</p>
+
+      <p class="pregunta1"><input type="radio" name="pregunta1" id="p12">
+      Los exponetes se multiplican.    </p>
+
+      <p class="pregunta1"><input type="radio" name="pregunta1" id="p13">
+        Los exponetes se dividen. 
+      </p>
+
+      <p class="pregunta1"><input type="radio" name="pregunta1" id="p14">
+        Los exponentes se suman y se restan.</p>
+      <p><strong>&iquest;EN UNA MULTIPLICACION DE EXPRESIONES ALGEBRAICAS QUE SE HACE CON LOS EXPONENTES? </strong></p>
+
+      <p class="pregunta2"><input type="radio" name="pregunta2" id="p21">
+        Los exponentes se multiplican.   </p>
+
+      <p class="pregunta2"><input type="radio" name="pregunta2" id="p22">
+        Se suman los exponentes,
+        .</p>
+
+      <p class="pregunta2"><input type="radio" name="pregunta2" id="p23">
+        No se suman los exponentes 
+        .</p>
+
+      <p class="pregunta2"><input type="radio" name="pregunta2" id="p24">
+        ninguno.</p>
+      <p class="paragraph"><strong>&iquest;EN  UNA DIVISIÓN DE EXPRESIONES ALEGEBRAICAS QUE PASA CON LOS EXPONENTES ?</strong></p>
+  
+        <p class="paragraph">
+        <p class="pregunta3"><input type="radio" name="pregunta3" id="p31">Los exponentes se suman. </p>
+  
+        <p class="pregunta3"><input type="radio" name="pregunta3" id="p32">
+        Los  exponentes se multiplican.        </p>
+  
+        <p class="paragraph">
+        <p class="pregunta3"><input type="radio" name="pregunta3" id="p33">
+        Los  exponentes se restan .        </p>
+  
+        <p>
+        
+        <p class="pregunta3">
+          <input type="radio" name="pregunta3" id="p34">
+          Se  toma el de mayor exponente y se resta.        </p>
+      <p><strong>&iquest;CÓMO SE RACIONALIZA?</strong></p>
+
+      <p class="pregunta4"><input type="radio" name="pregunta4" id="p41">
+        Se quita los radicales de numerador 
+        .</p>
+
+      <p class="pregunta4"><input type="radio" name="pregunta4" id="p42">
+        Quitamos los radicales del denominar y numerador.
+        .</p>
+
+      <p class="pregunta4"><input type="radio" name="pregunta4" id="p43">
+      Consiste en no quitar los radicales del denominador, es decir no quitar las raíces del denominador.</p>
+
+      <p class="pregunta4"><input type="radio" name="pregunta4" id="p44">
+        Consiste en quitar los radicales del denominador, es decir quitar las raíces del denominador
+        .</p>
+      <p class="paragraph"><strong>.&iquest;PARA CALCULAR LA RAIZ CUADRADA DE UN NÚMERO QUE BEDEMOS HACER  ? </strong></p>
+      <p class="paragraph">
+      <p class="pregunta5"><input type="radio" name="pregunta5" id="p51">
+        Se debe sacar la mitad del número.</p>
+
+      <p class="paragraph">
+      <p class="pregunta5"><input type="radio" name="pregunta5" id="p52">
+Debemos dividir el numero por el indice de la raiz.</p>
+
+      <p class="paragraph">
+      <p class="pregunta5"><input type="radio" name="pregunta5" id="p53">
+Debemos multiplicar el número por el indice     .</p>
+
+      <p class="paragraph">
+      <p class="pregunta5"><input type="radio" name="pregunta5" id="p54">
+        Ninguna.
+      </p>
+      <p class="paragraph">
+      <p class="pregunta5"><input type="radio" name="pregunta5" id="p55">
+      Hay que encontrar el número que multiplicado por sí mismo nos da ese primer número.</p>
+
+
+
+      <hr>
+
+      <h2 id="resultado">Aciertos: 0</h2>
+
+      <p>
+        <input name="button" type="button" onClick="resultado()" value=" R E S U L T A D O " style='width:250px;text-decoration: none;
+    padding: 10px;
+    font-weight: 600;
+    font-size: 15px;
+    color:#000000;
+    background-color:#FF9900;
+    border-radius: 6px;
+    border: 2px solid #FF6600; height:50px' />
+      </p>
+    </form>
+
+   </div>
+  </main> 
+  <footer class="footer">
+    <div class="grupo-1">
+        <div class="box">
+            <figure>
+                <a href="#">
+                    <img src="img/foto.jpg" alt="Logo Aprende fisica">
+                </a>
+            </figure>
+        </div>
+        <div class="box">
+            <h2>INFORMACION</h2>
+                <p>Soy Ivan Ever Quispe Cuellar Licenciado en Construcción Civil e Ingeniero Civil, profesional que cuenta con la experiencia en diseño web.</p>
+                <p>Brindo asesoría en la materia de matemáticas desde nivel básico hasta el nivel universitario.</p>
+        </div>
+        <div class="box">
+            <h2>REDES SOCIALES</h2>
+            <div class="red-social">
+                <a href="https://www.facebook.com/ivan.quispecuellar" class="fa fa-facebook"></a>
+                    <a href="https://instagram.com/iv_an6914?igshid=YmMyMTA2M2Y=" class="fa fa-instagram"></a>
+                    
+                    <a href="https://www.youtube.com/channel/UCYzYUSUVfT1LWJj7kuCkdsQ" class="fa fa-youtube"></a>
+            </div>
+        </div>
+    </div>
+    <div class="grupo-2">
+         <small>&copy; 2023 <b>Aprende Matemática </b> - Todos los Derechos Reservados.</small>
+        </divclas>
+</footer>  
+</body>
+
+</html>
